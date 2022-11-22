@@ -1,24 +1,24 @@
 import React from "react";
-// import { FaBeer } from 'react-icons/fa';
-import { MdOutlineOndemandVideo } from 'react-icons/md'
+import Home from "./Home";
+import { MdOutlineOndemandVideo } from "react-icons/md";
 
 function Sidebar() {
   return (
-    <div className="fixed top-0 left-0 h-screen w-32 m-0 flex flex-col bg-gray-900 text-white shadow-2xl">
-        <div className="flex justify-center mt-4">
-            {/* <MdOutlineOndemandVideo size={50} className="" /> */}
-        </div>
+    <>
+      <div className="bg-gray-900 min-h-screen w-[20vw] text-white shadow-2xl flex flex-col">
+        <MdOutlineOndemandVideo size={65} className="mt-2 mb-4 ml-14" />
 
-        <div className="mt-10 flex justify-center gap-4">
+        <div className="p-5 text-2xl">
             <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
+                <li>New</li>
+                <li>Gaming</li>
+                <li>Coding</li>
+                <li>Music</li>
+                <li>Sports</li>
             </ul>
         </div>
-    </div>
+      </div>
+    </>
   );
 }
 

@@ -1,15 +1,14 @@
 import React from 'react';
-import Sidebar from './components/Sidebar';
-import Header from './components/Header';
+import { Sidebar, Header, Content, Card } from './components/Index';
+import Home from './components/Home';
+
 
 function App() {
   return (
-    <div className="App">
       <div className="flex">
         <Sidebar />
-        <Header />
+        <Home />
       </div>
-    </div>
   );
 }
 
