@@ -1,9 +1,8 @@
 import React from 'react'
 
-function Card() {
+function Card({ key }) {
   return (
-    <div>
-    {/* <div className='bg-slate-700 rounded-sm h-24 w-24'> */}
+    <div className='bg-slate-700 rounded-sm h-24 w-24' key={key}>
         Card
     </div>
   )
