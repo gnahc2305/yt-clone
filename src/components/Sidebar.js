@@ -6,7 +6,7 @@ function Sidebar() {
   return (
     <div className="fixed top-0 left-0 h-screen w-32 m-0 flex flex-col bg-gray-900 text-white shadow-2xl">
         <div className="flex justify-center mt-4">
-            <MdOutlineOndemandVideo size={50} className="" />
+            {/* <MdOutlineOndemandVideo size={50} className="" /> */}
         </div>
 
         <div className="mt-10 flex justify-center gap-4">
