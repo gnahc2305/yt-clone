@@ -13,10 +13,10 @@ function Content() {
   }, [selectedCategory]);
 
   return (
-    <div className='overflow-auto'>
-      <h1 className="text-4xl p-5">{selectedCategory} Videos</h1>
+    <div className=''>
+      <h1 className="text-3xl pl-3 pt-3">{selectedCategory} Videos</h1>
 
-      <div>
+      <div className='overflow-auto'>
         <Videos videos={videos} />
       </div>
     </div>
