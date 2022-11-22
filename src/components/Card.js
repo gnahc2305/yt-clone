@@ -2,7 +2,10 @@ import React from 'react'
 
 function Card() {
   return (
-    <div>Card</div>
+    <div>
+    {/* <div className='bg-slate-700 rounded-sm h-24 w-24'> */}
+        Card
+    </div>
   )
 }
 
