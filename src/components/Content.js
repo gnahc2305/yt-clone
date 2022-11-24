@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Videos } from "./Index";
+import { Videos, ChannelCard } from "./Index";
 import { fetchFromApi } from "../utils/FetchFromApi";
 
 function Content() {
@@ -18,6 +18,7 @@ function Content() {
 
       <div className='overflow-auto'>
         <Videos videos={videos} />
+        {/* <ChannelCard /> */}
       </div>
     </div>
   );
