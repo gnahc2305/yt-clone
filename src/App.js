@@ -12,7 +12,7 @@ function App() {
     <div className="flex">
       <Sidebar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
       <div>
-        <Header />
+        <Header selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
         <Content selectedCategory={selectedCategory} />
       </div>
     </div>
