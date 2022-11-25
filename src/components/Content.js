@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Videos, ChannelCard } from "./Index";
 import { fetchFromApi } from "../utils/FetchFromApi";
 
-function Content() {
-  const [selectedCategory, setSelectedCategory] = useState("New");
+function Content({ selectedCategory }) {
+  // const [selectedCategory, setSelectedCategory] = useState("New");
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
