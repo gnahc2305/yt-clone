@@ -4,7 +4,7 @@ import Card from './Card';
 function Videos({videos}) {
   // console.log(videos[0]);
   return (
-    <div className='grid gap-5 p-5 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+    <div className='grid gap-5 p-5 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center'>
       {videos.map((item, idx) => (
         <Card key={idx} item={item} />
       ))}

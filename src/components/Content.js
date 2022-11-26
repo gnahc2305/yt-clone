@@ -13,12 +13,11 @@ function Content({ selectedCategory }) {
   }, [selectedCategory]);
 
   return (
-    <div className=''>
-      <h1 className="text-3xl pl-3 pt-3">{selectedCategory} Videos</h1>
+    <div className="">
+      <h1 className="text-3xl pl-3 pt-3">{selectedCategory}Videos</h1>
 
-      <div className='overflow-auto'>
+      <div className="overflow-auto">
         <Videos videos={videos} />
-        {/* <ChannelCard /> */}
       </div>
     </div>
   );
