@@ -10,7 +10,7 @@ function Sidebar({ setSelectedCategory }) {
       <div className="p-5 text-2xl flex flex-col gap-6">
         {categories.map((category) => (
             <button
-              className="flex w-60 h-10 items-center justif"
+              className="flex h-10 items-center"
               key={category.name}
               onClick={() => setSelectedCategory(category.name)}
             >

@@ -12,11 +12,11 @@ function Header({ setSelectedCategory }) {
   return (
     <div className="h-20  w-[80vw] bg-gray-900 text-white flex items-center justify-center">
       <div className="flex">
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='flex'>
           <input
             type="text"
             placeholder="Search"
-            className="h-10 w-80 rounded-2xl pl-5 text-black"
+            className="h-10 w-[450px] rounded-2xl pl-5 text-black"
             onChange={(e) => setSearch(e.target.value)}
           />
           <button className="text-white pl-1">
