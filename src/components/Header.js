@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { MdOutlineOndemandVideo } from "react-icons/md";
 import { AiOutlineSearch } from "react-icons/ai";
 
-function Header({ selectedCategory, setSelectedCategory }) {
+function Header({ setSelectedCategory }) {
   const [search, setSearch] = useState("");
 
   function handleSubmit(e) {
