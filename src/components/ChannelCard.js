@@ -1,9 +1,10 @@
 import React from 'react'
 
-function ChannelCard() {
+function ChannelCard({ item }) {
+  console.log(item.snippet?.thumbnails?.high?.url);
   return (
-    <div className='bg-gray-800 md:h-[250px] md:w-[250px] rounded-full h-[200px] w-[200px] m-2'>
-      
+    <div className='bg-gray-800 md:h-[200px] md:w-[200px] rounded-full h-[150px] w-[150px] m-2'>
+      <img src={item.snippet?.thumbnails?.high?.url} alt="profile" srcset="" />
     </div>
   )
 }

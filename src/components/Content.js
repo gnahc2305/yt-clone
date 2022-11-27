@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Videos, ChannelCard } from "./Index";
+import { Videos } from "./Index";
 import { fetchFromApi } from "../utils/FetchFromApi";
 
 function Content({ selectedCategory }) {
-  // const [selectedCategory, setSelectedCategory] = useState("New");
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
@@ -12,11 +11,17 @@ function Content({ selectedCategory }) {
     });
   }, [selectedCategory]);
 
+  // videos.forEach(e => {
+  //   if (e.id.kind === "youtube#channel") {
+  //     console.log('canal');
+  //   }
+  // })
+
   return (
     <div className="">
       <h1 className="text-3xl pl-3 pt-3">{selectedCategory} Videos</h1>
 
-      <div className="overflow-auto">
+      <div className="">
         <Videos videos={videos} />
       </div>
     </div>

@@ -10,7 +10,7 @@ function Header({ setSelectedCategory }) {
   }
 
   return (
-    <div className="h-20  w-[80vw] bg-gray-900 text-white flex items-center justify-center">
+    <div className="h-[8vh]  w-[80vw] bg-gray-900 text-white flex items-center justify-center">
       <div className="flex">
         <form onSubmit={handleSubmit} className='flex'>
           <input
