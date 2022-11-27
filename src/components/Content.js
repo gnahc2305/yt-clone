@@ -14,7 +14,7 @@ function Content({ selectedCategory }) {
 
   return (
     <div className="">
-      <h1 className="text-3xl pl-3 pt-3">{selectedCategory}Videos</h1>
+      <h1 className="text-3xl pl-3 pt-3">{selectedCategory} Videos</h1>
 
       <div className="overflow-auto">
         <Videos videos={videos} />

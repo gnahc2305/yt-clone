@@ -5,7 +5,7 @@ let ytLink = 'https://www.youtube.com/watch?v='
 function Card({ item: { id: {videoId}, snippet} }) {
   return (
     <div className='rounded-md md:h-[250px] md:w-[250px] h-[200px] w-[200px] cursor-pointer'>
-      <a href={ytLink + videoId}>
+      <a href={ytLink + videoId} target="_blank" rel="noopener noreferrer">
         <div className='h-[65%] rounded-md'>
             <img src={snippet?.thumbnails?.high?.url} alt="thumbnail" className='h-[100%] w-[100%]' />
         </div>
